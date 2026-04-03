@@ -1,0 +1,9 @@
+CREATE DATABASE ml_repo;
+USE ml_repo;
+
+CREATE TABLE models (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    accuracy FLOAT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
